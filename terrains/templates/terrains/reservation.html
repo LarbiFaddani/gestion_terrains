@@ -133,8 +133,8 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="user_id">User ID</label>
-                            <input type="text" class="form-control" id="user_id" name="user_id" value="{{ user.first_name }}" readonly style="background-color: white;color: black !important;">
+                            <label for="user_id">Nom du client:</label>
+                            <input type="text" class="form-control" id="user_id" name="user_id" value="{{ user.first_name }} {{user.last_name}}" readonly style="background-color: white;color: black !important;">
                         </div>
                         <div class="row">
                             <div class="form-group col-2">
@@ -142,7 +142,7 @@
                             <input type="number" class="form-control" id="terrain_id" name="terrain_id" value="{{ terrain.id }}" readonly style="background-color: white;color: black !important;">
                         </div>
                         <div class="form-group col-10">
-                            <label for="terrain_nom">Terrain Name</label>
+                            <label for="terrain_nom">Nom de terrain:</label>
                             <input type="text" class="form-control" id="terrain_nom" name="terrain_nom" value="{{ terrain.nom }}" readonly style="background-color: white;color: black !important;">
                         </div>
                         </div>
@@ -152,11 +152,11 @@
                             <input type="number" class="form-control" id="montant_payer" name="montant_payer" value="{{ tarif_horaire }}" readonly style="background-color: white;color: black !important;">
                         </div>
                         <div class="form-group">
-                            <label for="date_time">Start Time</label>
+                            <label for="date_time">Date début: </label>
                             <input type="text" class="form-control" id="date_time" name="date_time" readonly style="background-color: white;color: black !important;">
                         </div>
                         <div class="form-group">
-                            <label for="end_time">End Time</label>
+                            <label for="end_time">Date fin: </label>
                             <input type="text" class="form-control" id="end_time" name="end_time" readonly style="background-color: white;color: black !important;">
                         </div>
                     </div>

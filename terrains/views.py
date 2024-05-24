@@ -48,7 +48,7 @@ def register(request):
         password = request.POST.get('password')
         user = User.objects.create_user(username=email, email=email, password=password, first_name=first_name,
                                         last_name=last_name)
-        return redirect('index')
+        return redirect('login')
     return render(request, 'terrains/register.html')
 
 def user_login(request):

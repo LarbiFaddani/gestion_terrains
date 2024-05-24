@@ -54,7 +54,7 @@
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
                             aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
-                            Posts
+                            Ajouts
                         </a>
                         <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
@@ -69,11 +69,12 @@
                         </a>
                         <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="{% url 'logout' %}" class="sidebar-link">Déconnexion</a>
+                                <a href="{% url 'modifier_utilisateur' %}" class="sidebar-link">Changer Information</a>
                             </li>
                             <li class="sidebar-item">
-
-                                <a href="{% url 'modifier_utilisateur' %}" class="sidebar-link">Chnager Information</a>
+                                <div class="container justify-content-center">
+                                    <div class="btn btn-danger"><a href="{% url 'logout' %}" class="sidebar-link">Déconnexion</a></div>
+                                </div>
                             </li>
                         </ul>
                     </li>
